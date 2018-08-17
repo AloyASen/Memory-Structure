@@ -1,69 +1,24 @@
 
-# Created by https://www.gitignore.io/api/c,c++,cmake,visualstudiocode
+# Created by https://www.gitignore.io/api/c++,cmake,visualstudiocode
 
-### C ###
+### C++ ###
 # Prerequisites
 *.d
 
-# Object files
+# Compiled Object files
+*.slo
+*.lo
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-### C++ ###
-# Prerequisites
-
-# Compiled Object files
-*.slo
-
-# Precompiled Headers
-
 # Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
 
 # Fortran module files
 *.mod
@@ -71,8 +26,14 @@ dkms.conf
 
 # Compiled Static libraries
 *.lai
+*.la
+*.a
+*.lib
 
 # Executables
+*.exe
+*.out
+*.app
 
 ### CMake ###
 CMakeCache.txt
@@ -84,6 +45,7 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+build
 
 ### VisualStudioCode ###
 .vscode/*
@@ -91,9 +53,19 @@ CTestTestfile.cmake
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.history
 
 
-# End of https://www.gitignore.io/api/c,c++,cmake,visualstudiocode
-
-### Don't upload the cmake build folder ###
+# End of https://www.gitignore.io/api/c++,cmake,visualstudiocode
+##exclude build folder from build ##
 build/
+
+## for the skiplist ds ##
+
+test_list.h
+*.o
+*.a
+*.dSYM
+gmon.out
+TODO
+bench

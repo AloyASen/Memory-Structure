@@ -1,0 +1,7 @@
+test_list.h
+*.o
+*.a
+*.dSYM
+gmon.out
+TODO
+bench
